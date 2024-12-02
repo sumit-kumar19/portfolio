@@ -8,7 +8,7 @@
     "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "next lint",
-    "homepage": "http://sumit-kumar19.github.io/portfolio/"
+    "homepage": "https://sumit-kumar19.github.io/portfolio/"
   },
   "dependencies": {
     "@emotion/react": "^11.13.5",
