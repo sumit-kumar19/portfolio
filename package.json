@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
+    "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "next lint",
-    "homepage": ""
+    "homepage": "http://sumit-kumar19.github.io/portfolio/"
   },
   "dependencies": {
     "@emotion/react": "^11.13.5",
@@ -38,13 +39,14 @@
     "tailwind-merge": "^2.5.5"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.17.9",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18",
     "@types/react-fontawesome": "^1.6.8",
     "@types/react-vertical-timeline-component": "^3.3.6",
+    "gh-pages": "^6.2.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5.7.2"
   }
 }

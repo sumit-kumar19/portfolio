@@ -29,7 +29,7 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 py-16 md:py-24 bg-foreg text-white min-h-screen">
           <div className="z-10">
             <img
-              src="https://my-aws-assets.s3.us-west-2.amazonaws.com/portfolio-img/avatar_circle.jpeg"
+              src=""
               alt="Yuji Sato"
               className="w-36 md:w-48 rounded-full border-4 border-foreg"
             />
