@@ -1,8 +1,7 @@
-// next.config.js
 module.exports = {
   output: 'export',
-  basePath: '/your-repository-name', // Your GitHub repository name
+  basePath: '/portfolio',
   images: {
-    unoptimized: true, // GitHub Pages doesn't support Next.js Image Optimization
-  },
+    unoptimized: true
+  }
 };

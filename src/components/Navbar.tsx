@@ -147,9 +147,10 @@ import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
 const navItems = [ ['History', 'history'],['Expertise', 'expertise'], ['Skills', 'skills'], ['Contact', 'contact']];
-function Navigation({parentToChild, modeChange}: any) {
+// function Navigation({parentToChild, modeChange}: any) {
+    function Navigation(){
 
-  const {mode} = parentToChild;
+//   const {mode} = parentToChild;
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -218,11 +219,11 @@ function Navigation({parentToChild, modeChange}: any) {
                     >
                         <MenuIcon />
                     </IconButton>
-                    {mode === 'dark' ? (
+                    {/* {mode === 'dark' ? (
                         <LightModeIcon onClick={() => modeChange()}/>
                     ) : (
                         <DarkModeIcon onClick={() => modeChange()}/>
-                    )}
+                    )} */}
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (
                             <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>

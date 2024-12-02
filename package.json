@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "deploy": "gh-pages -d out",
+    "build": "next build",
+    "export": "next export",
+    "deploy": "npm run build && npm run export && gh-pages -d out",
     "start": "next start",
     "lint": "next lint",
-    "homepage": "https://sumit-kumar19.github.io/portfolio/"
+    "homepage": "https://sumit-kumar19.github.io/portfolio"
   },
   "dependencies": {
     "@emotion/react": "^11.13.5",
