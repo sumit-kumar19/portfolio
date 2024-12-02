@@ -1,0 +1,62 @@
+
+// import React from "react"
+
+// interface Skill {
+//   name: string
+//   description: string
+//   logo: string
+// }
+
+// interface SkillsData {
+//   backend: Skill[]
+//   cloudDevOps: Skill[]
+// }
+
+// const skillsData: SkillsData = {
+//   backend: [
+//     { name: "Flask", description: "Python Framework", logo: "/placeholder.svg?height=64&width=64" },
+//     { name: "PHP", description: "Backend Language", logo: "/placeholder.svg?height=64&width=64" },
+//     { name: "Java", description: "Object-Oriented Programming Language", logo: "/placeholder.svg?height=64&width=64" },
+//     { name: "SpringBoot", description: "Java Framework", logo: "/placeholder.svg?height=64&width=64" },
+//     { name: "Node.js", description: "Backend Runtime", logo: "/placeholder.svg?height=64&width=64" },
+//   ],
+//   cloudDevOps: [
+//     { name: "CI/CD", description: "Continuous Integration & Delivery", logo: "/placeholder.svg?height=64&width=64" },
+//     { name: "Netlify", description: "Frontend Deployment Platform", logo: "/placeholder.svg?height=64&width=64" },
+//     { name: "Heroku", description: "Cloud Platform for Apps", logo: "/placeholder.svg?height=64&width=64" },
+//     { name: "Kubernetes", description: "Container Orchestration", logo: "/placeholder.svg?height=64&width=64" },
+//     { name: "Docker", description: "Containerization", logo: "/placeholder.svg?height=64&width=64" },
+//     { name: "GCP", description: "Google Cloud Platform", logo: "/placeholder.svg?height=64&width=64" },
+//   ]
+// }
+
+// const SkillsSection: React.FC<{ title: string; skills: Skill[] }> = ({ title, skills }) => {
+//   return (
+//     <div className="my-8 border-2 border-solid border-gray-600 rounded p-6 bg-gray-200 dark:bg-stone-900 " id="skills">
+//       <h2 className="text-3xl font-semibold mb-6 text-primary ">{title}</h2>
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+//         {skills.map((skill, index) => (
+//           <div key={index} className="bg-white text-foreground border-2 border-solid border-gray-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500 p-6 rounded-lg dark:bg-gray-900">
+//             <div className="mx-auto mb-4 w-16 h-16">
+//               <img src={skill.logo} alt={skill.name} className="w-full h-full object-contain hover:scale-105 hover:shadow-xl " />
+//             </div>
+//             <h3 className="text-xl font-bold hidden sm:block">{skill.name}</h3>
+//             <p className="text-muted-foreground hidden sm:block">{skill.description}</p>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default function SkillsPage() {
+//   return (
+//     <div className="min-h-screen bg-background text-foreground  ">
+//       <div className="container mx-auto px-4 py-8 ">
+//         <h1 className="text-4xl font-bold mb-8 text-center text-foreground ">My Skills</h1>
+//         <SkillsSection title="Backend" skills={skillsData.backend} />
+//         <SkillsSection title="Cloud & DevOps" skills={skillsData.cloudDevOps} />
+//       </div>
+//     </div>
+//   )
+// }

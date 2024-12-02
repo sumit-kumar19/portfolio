@@ -1,4 +1,3 @@
-// import React from "react";
 // //build a scroll navbar for all componets
 // import React, { useEffect, useState } from "react";
 // import AppBar from '@mui/material/AppBar';
@@ -123,7 +122,7 @@
 //   );
 // }
 
-// export default Navigation; IT SHOULD merge with projects
+// export default Navigation;
 
 
 import React from "react";
